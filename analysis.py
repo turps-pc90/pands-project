@@ -20,13 +20,13 @@ def show_menu():
 
 
 def option1():
-     print('Handle option \'Option 1\'')
+    print('Handle option \'Option 1\'')
 
 def option2():
-     print('Handle option \'Option 2\'')
+    print('Handle option \'Option 2\'')
 
 def option3():
-     print('Handle option \'Option 3\'')
+    print('Handle option \'Option 3\'')
 
 def option4():
     print('Handle option \'Option 4\'')
