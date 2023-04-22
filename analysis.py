@@ -26,6 +26,8 @@ def option1():
     output_summary()
     print("Option 1 has been selected. This has outputted a text file summarising the data for each of the iris species.")
     print("This file has been saved in the same location as this script.")
+    print("Function complete")
+    print("- - - - - - - - - - - - - - - -")
 
 def option2():
     print('Handle option \'Option 2\'')

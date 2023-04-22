@@ -1,0 +1,3 @@
+For the Iris-setosa species, the sepal length ranges from 4.3cm to 5.8cm. The sepal width ranges from 2.3cm to 4.4cm. The petal length ranges from 1.0cm to 1.9cm. The petal width ranges from 0.1cm to 0.6cm.
+For the Iris-versicolor species, the sepal length ranges from 4.9cm to 7.0cm. The sepal width ranges from 2.0cm to 3.4cm. The petal length ranges from 3.0cm to 5.1cm. The petal width ranges from 1.0cm to 1.8cm.
+For the Iris-virginica species, the sepal length ranges from 4.9cm to 7.9cm. The sepal width ranges from 2.2cm to 3.8cm. The petal length ranges from 4.5cm to 6.9cm. The petal width ranges from 1.4cm to 2.5cm.
