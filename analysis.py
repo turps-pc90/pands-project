@@ -6,6 +6,9 @@
 # 4. Other function to be decided
 # Author: Paul Callaghan
 
+from summary import output_summary
+
+
 menu_options = {
     1: 'Output Summary Of Each Variable',
     2: 'Save Histogram Of Each Variable', 
@@ -20,7 +23,9 @@ def show_menu():
 
 
 def option1():
-    print('Handle option \'Option 1\'')
+    output_summary()
+    print("Option 1 has been selected. This has outputted a text file summarising the data for each of the iris species.")
+    print("This file has been saved in the same location as this script.")
 
 def option2():
     print('Handle option \'Option 2\'')

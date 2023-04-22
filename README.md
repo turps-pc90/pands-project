@@ -40,4 +40,8 @@ Stack Exchange Inc. (2012, May 16). How to create a file name with the current d
 
 Liu, D. (2021, August 12). Reading and Writing CSV Files in Python. Real Python. Retrieved April 23, 2023, from https://realpython.com/python-csv/.
 
+Pandas GroupBy: Your Guide to Grouping Data in Python. Real Python. URL: https://realpython.com/pandas-groupby/#the-hello-world-of-pandas-groupby (accessed April 22, 2023)
+
+Pandas GroupBy - One Column and Get Mean, Min, and Max values. GeeksforGeeks. URL: https://www.geeksforgeeks.org/pandas-groupby-one-column-and-get-mean-min-and-max-values/ (accessed April 22, 2023)
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) 	![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
