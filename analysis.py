@@ -31,13 +31,24 @@ def option1():
 
 def option2():
     print('Handle option \'Option 2\'')
+    print("Option 2 has been selected.")
+    print("This file has been saved in the same location as this script.")
+    print("Function complete")
+    print("- - - - - - - - - - - - - - - -")
 
 def option3():
     print('Handle option \'Option 3\'')
+    print("Option 3 has been selected.")
+    print("This file has been saved in the same location as this script.")
+    print("Function complete")
+    print("- - - - - - - - - - - - - - - -")
 
 def option4():
     print('Handle option \'Option 4\'')
-
+    print("Option 4 has been selected.")
+    print("Dummy Text")
+    print("Function complete")
+    print("- - - - - - - - - - - - - - - -")
 
 
 if __name__ == '__main__':

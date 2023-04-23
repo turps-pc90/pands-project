@@ -24,6 +24,7 @@ species = df.Species
 grouped = df.groupby('Species')
 min_vals = grouped.min()
 max_vals = grouped.max()
+mean_vals = grouped.mean()
 
 # Create function to be imported to analysis.py
 def output_summary():
@@ -34,13 +35,17 @@ def output_summary():
             # Loop through minimum and maximum values for each variable grouped by species type. The .loc requires column names from csv file. 
             sep_l_min = min_vals.loc[i, 'SepalLengthCm']
             sep_l_max = max_vals.loc[i, 'SepalLengthCm']
+            sep_l_avg = mean_vals.loc[i, 'SepalLengthCm']
             sep_w_min = min_vals.loc[i, 'SepalWidthCm']
             sep_w_max = max_vals.loc[i, 'SepalWidthCm']
+            sep_w_avg = mean_vals.loc[i, 'SepalWidthCm']
             pet_l_min = min_vals.loc[i, 'PetalLengthCm']
             pet_l_max = max_vals.loc[i, 'PetalLengthCm']
+            pet_l_avg = mean_vals.loc[i, 'PetalLengthCm']
             pet_w_min = min_vals.loc[i, 'PetalWidthCm']
             pet_w_max = max_vals.loc[i, 'PetalWidthCm']
-            output = f"For the {i} species, the sepal length ranges from {sep_l_min}cm to {sep_l_max}cm. The sepal width ranges from {sep_w_min}cm to {sep_w_max}cm. The petal length ranges from {pet_l_min}cm to {pet_l_max}cm. The petal width ranges from {pet_w_min}cm to {pet_w_max}cm."
+            pet_w_avg = mean_vals.loc[i, 'PetalWidthCm']
+            output = f"For the {i} species, the sepal length ranges from {sep_l_min}cm to {sep_l_max}cm (with an average of {sep_l_avg}cm). The sepal width ranges from {sep_w_min}cm to {sep_w_max}cm (with an average of {sep_w_avg}cm). The petal length ranges from {pet_l_min}cm to {pet_l_max}cm (with an average of {pet_l_avg}cm). The petal width ranges from {pet_w_min}cm to {pet_w_max}cm (with an average of {pet_w_avg}cm)."
             # Puts line between each outputted string
             file.write(output + '\n')
-            
+
