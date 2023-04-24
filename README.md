@@ -13,20 +13,41 @@ Based on Chapter 3 (section 2) of 'Mark Fenner's Machine Learning with Python fo
 
 In the dataset, there are four measurements per iris - sepal length, sepal width, petal length and petal width (all in centimetres).
 
-The analysis.py script will contain the menu where the user can select from 4 functions or to exit the application. 
-
-
 #### Table of Contents
 
-#### Installation
+- [Initial Research](#initial-research)
+- [Creating User Menu](#creating-user-menu)
+- [Usage](#usage)
+- [Findings](#findings)
+- [References](#references)
 
-Details of installation - may be removed if irrelevant
+#### Initial Research<a id="initial-research"></a>
+To be filled in
 
-#### Usage
+#### Creating User Menu<a id="creating-user-menu"></a>
+The analysis.py script contains the menu where the user can select from 4 functions or to exit the application. 
 
+<u>1: 'Output Summary Of Each Variable'</u>
+
+Option 1: The first option in analysis.py is to call the summary_output function which is imported from summary.py. Using Pandas, the IrisDataset.csv is read into a dataframe and grouped by the species type - iris setosa, iris versicolor and iris virginica. 'time' is imported to created a timestamp for unique filenames so user can see when file is written within the name.
+
+A loop is created with variables to output a unique sentence for each of the species types. F-Strings are used for outputting the variables into the text file. 
+
+2: 'Save Histogram Of Each Variable'
+
+3: 'Output Scatter Plot Of Each Pair Of Variables'
+
+4: 'To Be Decided'
+
+5: 'Exit'
+
+#### Usage<a id="usage"></a>
 Explanation for how to use the project
 
-#### Credits
+#### Findings<a id="findings"></a>
+To be completed 
+
+#### References<a id="references"></a>
 
 UCI Machine Learning Repository. (n.d.). Iris Data Set. Kaggle. Retrieved 08/04/2023, from https://www.kaggle.com/datasets/uciml/iris?resource=download.
 
@@ -48,4 +69,12 @@ Schafer, C. (2019, January 7). Matplotlib Tutorial (Part 6): Histograms [Video].
 
 Matplotlib Development Team. (2021). matplotlib.axes.Axes.hist. Matplotlib 3.4.2 documentation. Retrieved September 27, 2021, from https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist.html
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) 	![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
+#### Packages Used In Project
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) - https://www.python.org/downloads/
+
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) - https://pandas.pydata.org/ - "is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language."
+
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) - https://matplotlib.org/ - "Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python."
+
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) - https://numpy.org/ - "The fundamental package for scientific computing with Python"
