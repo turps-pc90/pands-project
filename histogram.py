@@ -13,7 +13,7 @@ df = pd.read_csv('IrisDataset.csv')
 menu_options = {
     1: 'Iris Setosa',
     2: 'Iris Versicolor', 
-    3: 'Iris VIrginica',
+    3: 'Iris Virginica',
     4: 'Exit',    
 }
 
@@ -56,23 +56,65 @@ def plot_setosa():
     plt.show()
 
 def plot_versicolor():
-    print("Yet to be built")
+    # Selecting data for Iris Versicolor species
+    versi_df = df[df['Species'] == 'Iris-versicolor']
+
+    # Creating subplots for each measurement, 2 rows and 2 columns with figsize of 8 x 8 inches
+    fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(8,8))
+
+    # Creating histogram for sepal width, sepal length, petal width and petal length
+    # Sepal Width Measurements (Coloured green)
+    axes[0,0].hist(versi_df['SepalWidthCm'], bins=10, color='g')
+    axes[0,0].set_title('Sepal Width')
+
+    # Sepal Length Measurements (Coloured red)
+    axes[0,1].hist(versi_df['SepalLengthCm'], bins=10, color='r')
+    axes[0,1].set_title('Sepal Length')
+
+    # Petal Width Measurements (Coloured magenta)
+    axes[1,0].hist(versi_df['PetalWidthCm'], bins=10, color='m')
+    axes[1,0].set_title('Petal Width')
+
+    # Petal Length Measurements (Coloured cyan)
+    axes[1,1].hist(versi_df['PetalLengthCm'], bins=10, color='c')
+    axes[1,1].set_title('Petal Length')
+
+    # Add a title to the plot
+    plt.suptitle('Distribution of Iris Versicolor Measurements')
+    
+    # Display the plot
+    plt.show()
 
 
 def plot_virginica():
-    print("Yet to be built")
+    # Selecting data for Iris Virginica species
+    virginica_df = df[df['Species'] == 'Iris-virginica']
 
+    # Creating subplots for each measurement, 2 rows and 2 columns with figsize of 8 x 8 inches
+    fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(8,8))
 
+    # Creating histogram for sepal width, sepal length, petal width and petal length
+    # Sepal Width Measurements (Coloured green)
+    axes[0,0].hist(virginica_df['SepalWidthCm'], bins=10, color='g')
+    axes[0,0].set_title('Sepal Width')
 
-# Create a list of variables for average sepal lengths and widths for each species
-#avg_sep_l = [df.loc[df['Species'] == species, 'SepalLengthCm'].mean() for species in df['Species'].unique()]
-#avg_sep_w = [df.loc[df['Species'] == species, 'SepalWidthCm'].mean() for species in df['Species'].unique()]
-#avg_pet_l = [df.loc[df['Species'] == species, 'PetalLengthCm'].mean() for species in df['Species'].unique()]
-#avg_pet_w = [df.loc[df['Species'] == species, 'PetalWidthCm'].mean() for species in df['Species'].unique()]
+    # Sepal Length Measurements (Coloured red)
+    axes[0,1].hist(virginica_df['SepalLengthCm'], bins=10, color='r')
+    axes[0,1].set_title('Sepal Length')
 
+    # Petal Width Measurements (Coloured magenta)
+    axes[1,0].hist(virginica_df['PetalWidthCm'], bins=10, color='m')
+    axes[1,0].set_title('Petal Width')
 
+    # Petal Length Measurements (Coloured cyan)
+    axes[1,1].hist(virginica_df['PetalLengthCm'], bins=10, color='c')
+    axes[1,1].set_title('Petal Length')
 
-
+    # Add a title to the plot
+    plt.suptitle('Distribution of Iris Virginica Measurements')
+    
+    # Display the plot
+    plt.show()
 
 if __name__ == '__main__':
     while(True):
