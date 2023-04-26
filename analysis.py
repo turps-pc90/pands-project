@@ -7,7 +7,7 @@
 # Author: Paul Callaghan
 
 from summary import output_summary
-
+from histogram import plot_setosa, plot_versicolor, plot_virginica
 
 menu_options = {
     1: 'Output Summary Of Each Variable',
@@ -17,10 +17,38 @@ menu_options = {
     5: 'Exit',
 }
 
+# Main menu for user
 def show_menu():
     for key in menu_options.keys():
         print(key, '-----', menu_options[key] )
 
+# Sub menu for user if option 2 selected
+def sub_menu():
+        sub_menu_options = {
+            1: 'Iris Setosa',
+            2: 'Iris Versicolor', 
+            3: 'Iris Virginica',
+            4: 'Exit',    
+        }
+        print("Please select a which species to display a histogram for:")
+        for key in sub_menu_options.keys():
+            print(key, '-----', sub_menu_options[key] )
+
+        sub_option = int(input("Enter your choice by selecting the corresponding number: "))
+        if sub_option == 1:
+            # Call the plot_setosa() function from histogram.py for option 1
+            plot_setosa()
+            print("Iris Setosa selected")
+        elif sub_option == 2:
+            # Call the plot_versicolor() function from histogram.py for option 2
+            plot_versicolor()
+            print("Iris Versicolor selected")
+        elif sub_option == 3:
+            # Call the plot_virginica() function imported from histogram.py for option 3
+            plot_virginica()
+            print("Iris Virginica selected")
+        else:
+            print("Invalid option. Please select a number between 1 and 3.")
 
 def option1():
     output_summary()
@@ -30,11 +58,10 @@ def option1():
     print("- - - - - - - - - - - - - - - -")
 
 def option2():
-    print('Handle option \'Option 2\'')
     print("Option 2 has been selected.")
-    print("This file has been saved in the same location as this script.")
-    print("Function complete")
+    sub_menu()
     print("- - - - - - - - - - - - - - - -")
+    print(" ")
 
 def option3():
     print('Handle option \'Option 3\'')

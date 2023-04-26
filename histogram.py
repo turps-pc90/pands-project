@@ -9,21 +9,6 @@ import pandas as pd
 
 df = pd.read_csv('IrisDataset.csv')
 
-# Creating a menu for user input. Copying same format as analysis.py page
-menu_options = {
-    1: 'Iris Setosa',
-    2: 'Iris Versicolor', 
-    3: 'Iris Virginica',
-    4: 'Exit',    
-}
-
-
-def show_menu():
-    for key in menu_options.keys():
-        print(key, '-----', menu_options[key] )
-
-
-# Splitting three species into three functions to prompt user selection for which histogram to see
 # Defining function to show Iris Setosa
 def plot_setosa():
     # Selecting data for Iris Setosa species
@@ -115,26 +100,3 @@ def plot_virginica():
     
     # Display the plot
     plt.show()
-
-if __name__ == '__main__':
-    while(True):
-        show_menu()
-        option = ''
-        try:
-            # Prompt user to input number to select which iris species to plot. 
-            option = int(input('Enter your choice by selecting the corresponding number: '))
-        except:
-            print('You have not selected a number from the menu.')
-        # Validate menu selection
-        if option == 1:
-            plot_setosa()
-        elif option == 2:
-            plot_versicolor()
-        elif option == 3:
-            plot_virginica()
-        elif option == 4:
-            print('You have selected to close the application.')
-            print('Thank you.')
-            exit()
-        else:
-            print('Invalid option. Please select a number between 1 and 4.')

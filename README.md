@@ -8,10 +8,7 @@ Iris Dataset Analysis
 
 ### Project Description:
 
-This project is intended to present the Fisher Iris dataset in a meaningful manner using at least a histogram, a scatterplot and a summary text file (with possibly more to be added).
-Based on Chapter 3 (section 2) of 'Mark Fenner's Machine Learning with Python for Everyone', the dataset is named after Sir Ronald Fisher, a statistician from the mid-20th century however it was in fact Edgar Anderson that gathered the data. 
-
-In the dataset, there are four measurements per iris - sepal length, sepal width, petal length and petal width (all in centimetres).
+This project is intended to present the Fisher Iris dataset in a meaningful manner by utilising the Python programming language to create at least a histogram, a scatterplot and a summary text file (with possibly more to be added).
 
 #### Table of Contents
 
@@ -22,18 +19,30 @@ In the dataset, there are four measurements per iris - sepal length, sepal width
 - [References](#references)
 
 #### Initial Research<a id="initial-research"></a>
-To be filled in
+
+Based on Chapter 3 (section 2) of 'Mark Fenner's Machine Learning with Python for Everyone', the dataset is named after Sir Ronald Fisher, a statistician from the mid-20th century however it was in fact Edgar Anderson that gathered the data.
+
+The dataset was downloaded from Kaggle (Retrieved 08/04/2023, from https://www.kaggle.com/datasets/uciml/iris?resource=download). 
+
+In the dataset, there are four measurements per iris - sepal length, sepal width, petal length and petal width (all in centimetres). The sample size of data for each species is 50 based on there being 50 rows of data for each of the species.
+
+![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fsimonava5%2Ffishers-iris-data&psig=AOvVaw1qmFwvDM_6B5-hPLybYKMF&ust=1682621508963000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJjg492byP4CFQAAAAAdAAAAABAE)
+
+The three types of iris are the Iris Setosa, Iris Versicolor and the Iris Virginica.
 
 #### Creating User Menu<a id="creating-user-menu"></a>
-The analysis.py script contains the menu where the user can select from 4 functions or to exit the application. 
 
-<u>1: 'Output Summary Of Each Variable'</u>
+The analysis.py script contains the menu where the user can select from 4 functions or to exit the application.
+
+1: 'Output Summary Of Each Variable'
 
 Option 1: The first option in analysis.py is to call the summary_output function which is imported from summary.py. Using Pandas, the IrisDataset.csv is read into a dataframe and grouped by the species type - iris setosa, iris versicolor and iris virginica. 'time' is imported to created a timestamp for unique filenames so user can see when file is written within the name.
 
 A loop is created with variables to output a unique sentence for each of the species types. F-Strings are used for outputting the variables into the text file. 
 
 2: 'Save Histogram Of Each Variable'
+
+The histogram.py is imported and can be run in it's entirety when the user selects option 2 from the menu. It opens up a sub-menu for the user to select a function which creates a histogram of each variable. The functions are based on the plottask.py task from a few weeks ago. Copied functions from summary.py to calculate averages of petal and sepal measurements for each of three iris species.
 
 3: 'Output Scatter Plot Of Each Pair Of Variables'
 
@@ -42,10 +51,12 @@ A loop is created with variables to output a unique sentence for each of the spe
 5: 'Exit'
 
 #### Usage<a id="usage"></a>
+
 Explanation for how to use the project
 
 #### Findings<a id="findings"></a>
-To be completed 
+
+To be completed.
 
 #### References<a id="references"></a>
 
