@@ -38,11 +38,13 @@ The analysis.py script contains the menu where the user can select from 4 functi
 
 Option 1: The first option in analysis.py is to call the summary_output function which is imported from summary.py. Using Pandas, the IrisDataset.csv is read into a dataframe and grouped by the species type - iris setosa, iris versicolor and iris virginica. 'time' is imported to created a timestamp for unique filenames so user can see when file is written within the name.
 
-A loop is created with variables to output a unique sentence for each of the species types. F-Strings are used for outputting the variables into the text file. 
+A loop is created with variables to output a unique sentence for each of the species types. F-Strings are used for outputting the variables into the text file.
 
 2: 'Save Histogram Of Each Variable'
 
-The histogram.py is imported and can be run in it's entirety when the user selects option 2 from the menu. It opens up a sub-menu for the user to select a function which creates a histogram of each variable. The functions are based on the plottask.py task from a few weeks ago. Copied functions from summary.py to calculate averages of petal and sepal measurements for each of three iris species.
+The histogram.py is imported and contains three functions. Any of these functions can be run when the user selects option 2 from the menu. The functions are based on the plottask.py task from a few weeks ago. Copied functions from summary.py to calculate averages of petal and sepal measurements for each of three iris species.
+
+The sub menu initially caused difficulties when trying to import it as it's own function from histogram.py so I moved the function to the analysis.py file and works after testing. 
 
 3: 'Output Scatter Plot Of Each Pair Of Variables'
 
