@@ -15,10 +15,22 @@ versicolor = df.loc[df['Species'] == 'Iris-versicolor']
 virginica = df.loc[df['Species'] == 'Iris-virginica']
 
 # Creating variables for each of the measurements within dataset
+# Setosa measurements
 setosa_petw = setosa['PetalWidthCm']
 setosa_petl = setosa['PetalLengthCm']
 setosa_sepw = setosa['SepalWidthCm']
 setosa_sepl = setosa['SepalLengthCm']
 
-print(setosa_petw)
+# Versicolor measurements
+versicolor_petw = versicolor['PetalWidthCm']
+versicolor_petl = versicolor['PetalLengthCm']
+versicolor_sepw = versicolor['SepalWidthCm']
+versicolor_sepl = versicolor['SepalLengthCm']
 
+# Virginica measurements
+virginica_petw = virginica['PetalWidthCm']
+virginica_petl = virginica['PetalLengthCm']
+virginica_sepw = virginica['SepalWidthCm']
+virginica_sepl = virginica['SepalLengthCm']
+
+print(setosa_petl, virginica_sepl, versicolor_sepw)
