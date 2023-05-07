@@ -48,7 +48,9 @@ The sub menu initially caused difficulties when trying to import it as it's own 
 
 3: 'Output Scatter Plot Of Each Pair Of Variables'
 
-4: 'To Be Decided'
+4: 'Seaborn Data Visualisation'
+
+The user will be able to select from a list of Seaborn data visualisation options. The idea is to present to the user how Seaborn looks in comparison to Matplotlib as it is a visualisation "library built on top of Matplotlib" (Pierre, 2021). 
 
 5: 'Exit'
 
@@ -83,6 +85,10 @@ GeeksforGeeks. (2021, January 7). Difference between loc() and iloc() in Pandas 
 Schafer, C. (2019, January 7). Matplotlib Tutorial (Part 6): Histograms [Video]. YouTube. https://www.youtube.com/watch?v=XDv6T4a0RNc&t=306s
 
 Matplotlib Development Team. (2021). matplotlib.axes.Axes.hist. Matplotlib 3.4.2 documentation. Retrieved September 27, 2021, from https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist.html.
+
+Pierre, S. (2021, March 11). Data Visualization in Python: A Step-by-Step Tutorial. Built In. Retrieved May 7, 2023, from https://builtin.com/data-science/data-visualization-tutorial.
+
+Rakesh (2021). Seaborn plot to Visualize Iris Data. Kaggle. Retrieved May 7, 2023, from https://www.kaggle.com/code/rakesh6184/seaborn-plot-to-visualize-iris-data/notebook.
 
 #### Packages Used In Project
 
