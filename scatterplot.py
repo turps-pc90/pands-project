@@ -33,4 +33,28 @@ virginica_petl = virginica['PetalLengthCm']
 virginica_sepw = virginica['SepalWidthCm']
 virginica_sepl = virginica['SepalLengthCm']
 
-print(setosa_petl, virginica_sepl, versicolor_sepw)
+# Create Petal Scatterplot
+def scatterplot_petals():
+    # Setosa Plot Points
+    plt.scatter(setosa_petl, setosa_petw, label='Setosa', color='purple')
+    # Versicolor Plot Points
+    plt.scatter(versicolor_petl, versicolor_petw, label='Setosa', color='darkgreen')
+    # Virginica Plot Points
+    plt.scatter(virginica_petl, virginica_petw, label='Virginica', color='brown')
+    plt.xlabel('Petal Length(Cm)')
+    plt.ylabel('Petal Width(Cm)')
+    plt.legend()
+    plt.show()
+
+# Create Sepal Scatterplot
+def scatterplot_sepals():
+    # Setosa Plot Points
+    plt.scatter(setosa_sepl, setosa_sepw, label='Setosa', color='purple')
+    # Versicolor Plot Points
+    plt.scatter(versicolor_sepl, versicolor_sepw, label='Setosa', color='darkgreen')
+    # Virginica Plot Points
+    plt.scatter(virginica_sepl, virginica_sepw, label='Virginica', color='brown')
+    plt.xlabel('Sepal Length(Cm)')
+    plt.ylabel('Sepal Width(Cm)')
+    plt.legend()
+    plt.show()
