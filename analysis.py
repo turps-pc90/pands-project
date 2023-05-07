@@ -8,11 +8,12 @@
 
 from summary import output_summary
 from histogram import plot_setosa, plot_versicolor, plot_virginica
+from scatterplot import scatterplot_petals, scatterplot_sepals
 
 menu_options = {
     1: 'Output Summary Of Each Variable',
     2: 'Save Histogram Of Each Variable', 
-    3: 'Output Scatter Plot Of Each Pair Of Variables',
+    3: 'Output Scatterplot Of Sepals (Width & Length) Or Petals (Width & Length)',
     4: 'To Be Decided',
     5: 'Exit',
 }
@@ -23,7 +24,7 @@ def show_menu():
         print(key, '-----', menu_options[key] )
 
 # Sub menu for user if option 2 selected
-def sub_menu():
+def sub_menu2():
         sub_menu_options = {
             1: 'Iris Setosa',
             2: 'Iris Versicolor', 
@@ -47,8 +48,38 @@ def sub_menu():
             # Call the plot_virginica() function imported from histogram.py for option 3
             plot_virginica()
             print("Iris Virginica selected")
+        elif sub_option == 4:
+            # Close menu
+            exit()
         else:
             print("Invalid option. Please select a number between 1 and 3.")
+
+# Sub menu for user if option 3 selected
+def sub_menu3():
+        sub_menu_options = {
+            1: 'Sepals',
+            2: 'Petals', 
+            3: 'Exit',    
+        }
+        print("Please select whether you would like to show the scatterplot for sepal measurements or petal measurements:")
+        for key in sub_menu_options.keys():
+            print(key, '-----', sub_menu_options[key] )
+
+        sub_option = int(input("Enter your choice by selecting the corresponding number: "))
+        if sub_option == 1:
+            # Call the scatterplot_sepals function from scatterplot.py for option 1
+            scatterplot_sepals()
+            print("Sepals selected")
+        elif sub_option == 2:
+            # Call the scatterplot_petals function from scatterplot.py for option 2
+            scatterplot_petals()
+            print("Petals selected")
+        elif sub_option == 3:
+            # Close the menu
+            exit()
+        else:
+            print("Invalid option. Please select a number between 1 and 3.")
+
 
 def option1():
     output_summary()
@@ -59,16 +90,15 @@ def option1():
 
 def option2():
     print("Option 2 has been selected.")
-    sub_menu()
+    sub_menu2()
     print("- - - - - - - - - - - - - - - -")
     print(" ")
 
 def option3():
-    print('Handle option \'Option 3\'')
     print("Option 3 has been selected.")
-    print("This file has been saved in the same location as this script.")
-    print("Function complete")
+    sub_menu3()
     print("- - - - - - - - - - - - - - - -")
+    print(" ")
 
 def option4():
     print('Handle option \'Option 4\'')
