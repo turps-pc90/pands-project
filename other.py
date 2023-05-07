@@ -30,8 +30,8 @@ def iris_facetgrid():
         print("Invalid input. Please enter either 'sepal' or 'petal'.")
 
 # Violin Plot - User will select which measurement to base the violin plot on
-def iris_violin(y_col):
-    sns.violinplot(x='Species', y=y_col, data=df, size=7)
+def iris_violin():
+    
     # Prompt for user to select which column they are basing the violin plot on
     print("Select a measurement column:")
     print("1. Sepal Length")
@@ -51,5 +51,10 @@ def iris_violin(y_col):
     else:
         print("Invalid choice. Please enter a number from 1 to 4.")
         exit()
+    sns.violinplot(x='Species', y=column, data=df, size=7)
+    plt.show()
 
-    iris_violin(column)
+
+if __name__ == '__main__': 
+    iris_violin()
+        
