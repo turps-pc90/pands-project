@@ -62,9 +62,9 @@ To be completed.
 
 #### References<a id="references"></a>
 
-UCI Machine Learning Repository. (n.d.). Iris Data Set. Kaggle. Retrieved 08/04/2023, from https://www.kaggle.com/datasets/uciml/iris?resource=download.
+UCI Machine Learning Repository. (n.d.). Iris Data Set. Kaggle. Retrieved April 8, 2023, from https://www.kaggle.com/datasets/uciml/iris?resource=download.
 
-Nemec, A. (2018, December 5). How to write a good README file. freeCodeCamp. Retrieved 08/04/2023, from https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/.
+Nemec, A. (2018, December 5). How to write a good README file. freeCodeCamp. Retrieved April 8, 2023, from https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/.
 
 Fenner, M. (2019). Machine Learning with Python for Everyone. Pearson.
 
@@ -74,13 +74,15 @@ Stack Exchange Inc. (2012, May 16). How to create a file name with the current d
 
 Liu, D. (2021, August 12). Reading and Writing CSV Files in Python. Real Python. Retrieved April 23, 2023, from https://realpython.com/python-csv/.
 
-Pandas GroupBy: Your Guide to Grouping Data in Python. Real Python. URL: https://realpython.com/pandas-groupby/#the-hello-world-of-pandas-groupby (accessed April 22, 2023)
+Real Python. (n.d.). Pandas GroupBy: Your Guide to Grouping Data in Python. Retrieved April 22, 2023, from https://realpython.com/pandas-groupby/#the-hello-world-of-pandas-groupby.
 
-Pandas GroupBy - One Column and Get Mean, Min, and Max values. GeeksforGeeks. URL: https://www.geeksforgeeks.org/pandas-groupby-one-column-and-get-mean-min-and-max-values/ (accessed April 22, 2023)
+GeeksforGeeks. (n.d.). Pandas GroupBy - One Column and Get Mean, Min, and Max values. Retrieved April 22, 2023, from https://www.geeksforgeeks.org/pandas-groupby-one-column-and-get-mean-min-and-max-values/.
+
+GeeksforGeeks. (2021, January 7). Difference between loc() and iloc() in Pandas DataFrame. Retrieved May 7, 2023, from https://www.geeksforgeeks.org/difference-between-loc-and-iloc-in-pandas-dataframe/.
 
 Schafer, C. (2019, January 7). Matplotlib Tutorial (Part 6): Histograms [Video]. YouTube. https://www.youtube.com/watch?v=XDv6T4a0RNc&t=306s
 
-Matplotlib Development Team. (2021). matplotlib.axes.Axes.hist. Matplotlib 3.4.2 documentation. Retrieved September 27, 2021, from https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist.html
+Matplotlib Development Team. (2021). matplotlib.axes.Axes.hist. Matplotlib 3.4.2 documentation. Retrieved September 27, 2021, from https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.hist.html.
 
 #### Packages Used In Project
 

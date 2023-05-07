@@ -10,9 +10,15 @@ import pandas as pd
 df = pd.read_csv('IrisDataset.csv')
 
 # Creating variables for the three species (based on article here - https://www.geeksforgeeks.org/difference-between-loc-and-iloc-in-pandas-dataframe/)
-setosa = df.loc[df['species'] == 'Iris-setosa']
-versicolor = df.loc[df['species'] == 'Iris-versicolor']
-virginica = df.loc[df['species'] == 'Iris-virginica']
+setosa = df.loc[df['Species'] == 'Iris-setosa']
+versicolor = df.loc[df['Species'] == 'Iris-versicolor']
+virginica = df.loc[df['Species'] == 'Iris-virginica']
 
+# Creating variables for each of the measurements within dataset
+setosa_petw = setosa['PetalWidthCm']
+setosa_petl = setosa['PetalLengthCm']
+setosa_sepw = setosa['SepalWidthCm']
+setosa_sepl = setosa['SepalLengthCm']
 
+print(setosa_petw)
 
