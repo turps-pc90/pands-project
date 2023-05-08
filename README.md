@@ -48,9 +48,12 @@ The sub menu initially caused difficulties when trying to import it as it's own 
 
 3: 'Output Scatter Plot Of Each Pair Of Variables'
 
+The scatterplot.py script is imported for this and contains two functions - scatterplot_petals and scatterplot_sepals. These functions compare petal sizes across the three species or sepal sizes across the three species. 
+
 4: 'Seaborn Data Visualisation'
 
 The user will be able to select from a list of Seaborn data visualisation options. The idea is to present to the user how Seaborn looks in comparison to Matplotlib as it is a visualisation "library built on top of Matplotlib" (Pierre, 2021). 
+The options provided are a facet grid, a violin grid and a pair plot. User input facilitates choice through arguments. 
 
 5: 'Exit'
 
