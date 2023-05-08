@@ -21,13 +21,14 @@ def iris_facetgrid():
     #.lower argument used to prevent issue with user's choice of case
     if measurement.lower() == 'sepal':
         # Plot sepal measurements. 'hue' parameter divides plots by species and assigns different colours to each species 
-        sns.FacetGrid(df, hue='Species', size=5).map(plt.scatter,'SepalLengthCm', 'SepalWidthCm').add_legend()
+        sns.FacetGrid(df, hue='Species', height=5).map(plt.scatter,'SepalLengthCm', 'SepalWidthCm').add_legend()
     elif measurement.lower() == 'petal':
         # Plot petal measurements  parameter divides plots by species and assigns different colours to each species
-        sns.FacetGrid(df, hue='Species', size=5).map(plt.scatter,'PetalLengthCm', 'PetalWidthCm').add_legend()
+        sns.FacetGrid(df, hue='Species', height=5).map(plt.scatter,'PetalLengthCm', 'PetalWidthCm').add_legend()
     else:
         # Handle invalid input
         print("Invalid input. Please enter either 'sepal' or 'petal'.")
+    plt.show()    
 
 # Violin Plot - User will select which measurement to base the violin plot on
 def iris_violin():
@@ -56,5 +57,5 @@ def iris_violin():
 
 
 if __name__ == '__main__': 
-    iris_violin()
+    iris_facetgrid()
         
