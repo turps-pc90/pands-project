@@ -55,7 +55,14 @@ def iris_violin():
     sns.violinplot(x='Species', y=column, data=df, size=7)
     plt.show()
 
+# Pair Plot
+def iris_pairplot():
+    sns.pairplot(df,hue='Species')
+    plt.show()
 
-if __name__ == '__main__': 
-    iris_facetgrid()
+# Uncomment lines below to test if functions working
+#if __name__ == '__main__': 
+    #iris_facetgrid()
+    #iris_violingrid()
+    #iris_pairplot()
         
