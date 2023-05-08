@@ -7,14 +7,15 @@
 # Author: Paul Callaghan
 
 from summary import output_summary
-from histogram import plot_setosa, plot_versicolor, plot_virginica
-from scatterplot import scatterplot_petals, scatterplot_sepals
+from histogram import *
+from scatterplot import * 
+from other import *
 
 menu_options = {
     1: 'Output Summary Of Each Variable',
     2: 'Save Histogram Of Each Variable', 
     3: 'Output Scatterplot Of Sepals (Width & Length) Or Petals (Width & Length)',
-    4: 'To Be Decided',
+    4: 'Seaborn Varities',
     5: 'Exit',
 }
 
@@ -80,6 +81,37 @@ def sub_menu3():
         else:
             print("Invalid option. Please select a number between 1 and 3.")
 
+# Sub menu for user if option 4 selected
+def sub_menu4():
+        sub_menu_options = {
+            1: 'Facet Grid',
+            2: 'Violin Grid', 
+            3: 'Pair Plot',  
+            4: 'Exit'  
+        }
+        print("Please select which of the Seaborn grids you would like to try:")
+        for key in sub_menu_options.keys():
+            print(key, '-----', sub_menu_options[key] )
+
+        sub_option = int(input("Enter your choice by selecting the corresponding number: "))
+        if sub_option == 1:
+            # Call the iris_facetgrid function from other.py for option 1
+            iris_facetgrid()
+            print("Facet Grid selected")
+        elif sub_option == 2:
+            # Call the iris_violin function from other.py for option 2
+            iris_violin()
+            print("Violin Grid selected")
+        elif sub_option == 3:
+            # Call the iris_pairplot function from other.py for option 3
+            iris_pairplot()
+            print("Pair Plot selected")
+        elif sub_option == 4:
+            # Close the menu
+            exit()
+        else:
+            print("Invalid option. Please select a number between 1 and 4.")
+
 
 def option1():
     output_summary()
@@ -101,11 +133,10 @@ def option3():
     print(" ")
 
 def option4():
-    print('Handle option \'Option 4\'')
     print("Option 4 has been selected.")
-    print("Dummy Text")
-    print("Function complete")
+    sub_menu4()
     print("- - - - - - - - - - - - - - - -")
+    print(" ")
 
 
 if __name__ == '__main__':
