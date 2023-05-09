@@ -15,7 +15,7 @@ menu_options = {
     1: 'Output Summary Of Each Variable',
     2: 'Save Histogram Of Each Variable', 
     3: 'Output Scatterplot Of Sepals (Width & Length) Or Petals (Width & Length)',
-    4: 'Seaborn Varities',
+    4: 'Seaborn Varieties',
     5: 'Exit',
 }
 
