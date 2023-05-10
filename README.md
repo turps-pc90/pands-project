@@ -59,7 +59,7 @@ The options provided are a facet grid, a violin grid and a pair plot. User input
 
 #### Usage<a id="usage"></a>
 
-Explanation for how to use the project
+
 
 #### Findings<a id="findings"></a>
 
