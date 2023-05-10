@@ -59,6 +59,20 @@ The options provided are a facet grid, a violin grid and a pair plot. User input
 
 #### Usage<a id="usage"></a>
 
+##### Prerequisites
+Download and install Python (https://www.python.org/downloads/) and Anaconda (https://www.anaconda.com/distribution/).
+
+##### Installing & Running
+
+The project is available here - https://github.com/turps-pc90/pands-problem-sheet - and all files associated with the project are stored in this repository. It can be cloned by using the following command 
+
+<p>git clone https://github.com/turps-pc90/pands-problem-sheet.git</p>
+
+Once the project has been cloned or downloaded, navigate to the project director. 
+
+Install the required dependencies by using requirements.txt file provided in the GitHub repository.
+
+Run 'python analysis.py' in your command line to start using the project. All the functions are imported into this file so the whole project should be usable from the command line menu presented from running this file. 
 
 
 #### Findings<a id="findings"></a>
