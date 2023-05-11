@@ -19,19 +19,19 @@ def plot_setosa():
 
     # Creating histogram for sepal width, sepal length, petal width and petal length
     # Sepal Width Measurements (Coloured green)
-    axes[0,0].hist(setosa_df['SepalWidthCm'], bins=10, color='g')
+    axes[0,0].hist(setosa_df['SepalWidthCm'], bins=20, color='g')
     axes[0,0].set_title('Sepal Width')
 
     # Sepal Length Measurements (Coloured red)
-    axes[0,1].hist(setosa_df['SepalLengthCm'], bins=10, color='r')
+    axes[0,1].hist(setosa_df['SepalLengthCm'], bins=20, color='r')
     axes[0,1].set_title('Sepal Length')
 
     # Petal Width Measurements (Coloured magenta)
-    axes[1,0].hist(setosa_df['PetalWidthCm'], bins=10, color='m')
+    axes[1,0].hist(setosa_df['PetalWidthCm'], bins=20, color='m')
     axes[1,0].set_title('Petal Width')
 
     # Petal Length Measurements (Coloured cyan)
-    axes[1,1].hist(setosa_df['PetalLengthCm'], bins=10, color='c')
+    axes[1,1].hist(setosa_df['PetalLengthCm'], bins=20, color='c')
     axes[1,1].set_title('Petal Length')
 
     # Add a title to the plot
@@ -49,19 +49,19 @@ def plot_versicolor():
 
     # Creating histogram for sepal width, sepal length, petal width and petal length
     # Sepal Width Measurements (Coloured green)
-    axes[0,0].hist(versi_df['SepalWidthCm'], bins=10, color='g')
+    axes[0,0].hist(versi_df['SepalWidthCm'], bins=20, color='g')
     axes[0,0].set_title('Sepal Width')
 
     # Sepal Length Measurements (Coloured red)
-    axes[0,1].hist(versi_df['SepalLengthCm'], bins=10, color='r')
+    axes[0,1].hist(versi_df['SepalLengthCm'], bins=20, color='r')
     axes[0,1].set_title('Sepal Length')
 
     # Petal Width Measurements (Coloured magenta)
-    axes[1,0].hist(versi_df['PetalWidthCm'], bins=10, color='m')
+    axes[1,0].hist(versi_df['PetalWidthCm'], bins=20, color='m')
     axes[1,0].set_title('Petal Width')
 
     # Petal Length Measurements (Coloured cyan)
-    axes[1,1].hist(versi_df['PetalLengthCm'], bins=10, color='c')
+    axes[1,1].hist(versi_df['PetalLengthCm'], bins=20, color='c')
     axes[1,1].set_title('Petal Length')
 
     # Add a title to the plot
@@ -80,19 +80,19 @@ def plot_virginica():
 
     # Creating histogram for sepal width, sepal length, petal width and petal length
     # Sepal Width Measurements (Coloured green)
-    axes[0,0].hist(virginica_df['SepalWidthCm'], bins=10, color='g')
+    axes[0,0].hist(virginica_df['SepalWidthCm'], bins=20, color='g')
     axes[0,0].set_title('Sepal Width')
 
     # Sepal Length Measurements (Coloured red)
-    axes[0,1].hist(virginica_df['SepalLengthCm'], bins=10, color='r')
+    axes[0,1].hist(virginica_df['SepalLengthCm'], bins=20, color='r')
     axes[0,1].set_title('Sepal Length')
 
     # Petal Width Measurements (Coloured magenta)
-    axes[1,0].hist(virginica_df['PetalWidthCm'], bins=10, color='m')
+    axes[1,0].hist(virginica_df['PetalWidthCm'], bins=20, color='m')
     axes[1,0].set_title('Petal Width')
 
     # Petal Length Measurements (Coloured cyan)
-    axes[1,1].hist(virginica_df['PetalLengthCm'], bins=10, color='c')
+    axes[1,1].hist(virginica_df['PetalLengthCm'], bins=20, color='c')
     axes[1,1].set_title('Petal Length')
 
     # Add a title to the plot
@@ -100,3 +100,9 @@ def plot_virginica():
     
     # Display the plot
     plt.show()
+
+# Uncomment Below For Testing
+if __name__ == '__main__':
+    plot_setosa()
+    plot_versicolor()
+    plot_virginica()

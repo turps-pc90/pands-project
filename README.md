@@ -22,9 +22,11 @@ This project is intended to present the Fisher Iris dataset in a meaningful mann
 
 Based on Chapter 3 (section 2) of 'Mark Fenner's Machine Learning with Python for Everyone', the dataset is named after Sir Ronald Fisher, a statistician from the mid-20th century however it was in fact Edgar Anderson that gathered the data.
 
-The dataset was downloaded from Kaggle (Retrieved 08/04/2023, from https://www.kaggle.com/datasets/uciml/iris?resource=download). 
+The dataset is considered a key component of training for 'statistics or machine learning' (Cui, 2020). 
 
 In the dataset, there are four measurements per iris - sepal length, sepal width, petal length and petal width (all in centimetres). The sample size of data for each species is 50 based on there being 50 rows of data for each of the species.
+
+The dataset was downloaded from Kaggle (Retrieved 08/04/2023, from https://www.kaggle.com/datasets/uciml/iris?resource=download). 
 
 ![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fsimonava5%2Ffishers-iris-data&psig=AOvVaw1qmFwvDM_6B5-hPLybYKMF&ust=1682621508963000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJjg492byP4CFQAAAAAdAAAAABAE)
 
@@ -76,11 +78,13 @@ Run 'python analysis.py' in your command line to start using the project. All th
 
 #### Findings<a id="findings"></a>
 
-To be completed.
+
 
 #### References<a id="references"></a>
 
 UCI Machine Learning Repository. (n.d.). Iris Data Set. Kaggle. Retrieved April 8, 2023, from https://www.kaggle.com/datasets/uciml/iris?resource=download.
+
+Cui, Y. (2020). The Iris Dataset: A Little Bit of History and Biology. Towards Data Science. Retrieved from https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5
 
 Nemec, A. (2018, December 5). How to write a good README file. freeCodeCamp. Retrieved April 8, 2023, from https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/.
 
