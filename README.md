@@ -28,8 +28,6 @@ In the dataset, there are four measurements per iris - sepal length, sepal width
 
 The dataset was downloaded from Kaggle (Retrieved 08/04/2023, from https://www.kaggle.com/datasets/uciml/iris?resource=download). 
 
-![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Fsimonava5%2Ffishers-iris-data&psig=AOvVaw1qmFwvDM_6B5-hPLybYKMF&ust=1682621508963000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJjg492byP4CFQAAAAAdAAAAABAE)
-
 The three types of iris are the Iris Setosa, Iris Versicolor and the Iris Virginica.
 
 #### Creating User Menu<a id="creating-user-menu"></a>
@@ -77,6 +75,14 @@ Install the required dependencies by using requirements.txt file provided in the
 Run 'python analysis.py' in your command line to start using the project. All the functions are imported into this file so the whole project should be usable from the command line menu presented from running this file.
 
 #### Findings<a id="findings"></a>
+
+The output of the summary indicates that the Iris-setosa species, the sepal has an average length of 5.006cm and an average width of 3.418cm. The petal length has an average of 1.464cm while it's width averages at 0.24cm.
+For the Iris-versicolor species, the sepal length has an average of 5.936cm and a width average of 2.77cm. The petal length has an average of 4.26cm and an average width of 1.33cm.
+For the Iris-virginica species, the sepal length has an average of 6.59cm. and sepal width average of 2.97cm. The petal length has an average of 5.55cm. The petal width has an average of 2.026cm.
+
+<img src="assets/img/AllHistograms.png" alt="Histograms of sepal length, sepal width, petal length, and petal width for the Iris dataset">
+
+The histograms show that the distributions of sepal width and sepal length are relatively similar for all three species, but there are noticeable differences in the distributions of petal width and petal length. For example, the petal width and petal length measurements for Iris Setosa have a narrower range of values and are generally smaller than those for the other two species. Meanwhile, the petal width and petal length measurements for Iris Versicolor and Iris Virginica have similar distributions, but Iris Virginica's measurements tend to be larger than those of Iris Versicolor.
 
 
 
