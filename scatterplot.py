@@ -1,7 +1,7 @@
 # scatterplot.py
-# This file will present the scatterplots for the variables relating to Fisher-Iris Dataset - based on the guide to create Python menus on this URL - https://matplotlib.org/stable/gallery/shapes_and_collections/scatter.html#sphx-glr-gallery-shapes-and-collections-scatter-py
+# This file will present the scatterplots for the variables relating to Fisher-Iris Dataset - based on the guide to create 
+# Python menus on this URL - https://matplotlib.org/stable/gallery/shapes_and_collections/scatter.html#sphx-glr-gallery-shapes-and-collections-scatter-py
 # The focus will be on displaying the relationship between the width and length of sepals and petals of each of the three types of Iris
-
 # Author: Paul Callaghan
 
 import matplotlib.pyplot as plt
