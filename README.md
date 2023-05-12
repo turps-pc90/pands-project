@@ -42,18 +42,19 @@ A loop is created with variables to output a unique sentence for each of the spe
 
 2: 'Save Histogram Of Each Variable'
 
-The histogram.py is imported and contains three functions. Any of these functions can be run when the user selects option 2 from the menu. The functions are based on the plottask.py task from a few weeks ago. Copied functions from summary.py to calculate averages of petal and sepal measurements for each of three iris species.
+Option 2: The histogram.py script is imported and contains three functions. Any of these functions can be run when the user selects option 2 from the menu. The functions are based on the plottask.py task from a few weeks ago. Copied functions from summary.py to calculate averages of petal and sepal measurements for each of three iris species.
 
-The sub menu initially caused difficulties when trying to import it as it's own function from histogram.py so I moved the function to the analysis.py file and works after testing. 
+The sub menu initially caused difficulties when trying to import it as it's own function from histogram.py so I moved the menu itself to the analysis.py file (as sub_menu2) and works as intended after testing.
 
 3: 'Output Scatter Plot Of Each Pair Of Variables'
 
-The scatterplot.py script is imported for this and contains two functions - scatterplot_petals and scatterplot_sepals. These functions compare petal sizes across the three species or sepal sizes across the three species. 
+Option 3: The scatterplot.py script is imported for this and contains two functions - scatterplot_petals and scatterplot_sepals. These functions compare petal sizes across the three species or sepal sizes across the three species. The code was based on the Matplotlib guide accesible on this URL - https://matplotlib.org/stable/gallery/shapes_and_collections/scatter.html#sphx-glr-gallery-shapes-and-collections-scatter-py
 
 4: 'Seaborn Data Visualisation'
 
-The user will be able to select from a list of Seaborn data visualisation options. The idea is to present to the user how Seaborn looks in comparison to Matplotlib as it is a visualisation "library built on top of Matplotlib" (Pierre, 2021). 
+The user will be able to select from a list of Seaborn data visualisation options. The idea is to present to the user how Seaborn looks in comparison to Matplotlib as it is a visualisation "library built on top of Matplotlib" (Pierre, 2021).
 The options provided are a facet grid, a violin grid and a pair plot. User input facilitates choice through arguments. 
+Based on the Kaggle guide here - https://www.kaggle.com/code/rakesh6184/seaborn-plot-to-visualize-iris-data/notebook
 
 5: 'Exit'
 
@@ -64,13 +65,13 @@ Download and install Python (https://www.python.org/downloads/) and Anaconda (ht
 
 ##### Installing & Running
 
-The project is available here - https://github.com/turps-pc90/pands-project - and all files associated with the project are stored in this repository. It can be cloned by using the following command 
+The project is available here - https://github.com/turps-pc90/pands-project - and all files associated with the project are stored in this repository. It can be cloned by using the following command:
 
 <p>git clone https://github.com/turps-pc90/pands-project.git</p>
 
 Once the project has been cloned or downloaded, navigate to the project director.
 
-Install the required dependencies by using requirements.txt file provided in the GitHub repository.
+Install the required dependencies by using the requirements.txt file provided in the GitHub repository.
 
 Run 'python analysis.py' in your command line to start using the project. All the functions are imported into this file so the whole project should be usable from the command line menu presented from running this file.
 
@@ -83,8 +84,6 @@ For the Iris-virginica species, the sepal length has an average of 6.59cm. and s
 <img src="assets/img/AllHistograms.png" alt="Histograms of sepal length, sepal width, petal length, and petal width for the Iris dataset">
 
 The histograms show that the distributions of sepal width and sepal length are relatively similar for all three species, but there are noticeable differences in the distributions of petal width and petal length. For example, the petal width and petal length measurements for Iris Setosa have a narrower range of values and are generally smaller than those for the other two species. Meanwhile, the petal width and petal length measurements for Iris Versicolor and Iris Virginica have similar distributions, but Iris Virginica's measurements tend to be larger than those of Iris Versicolor.
-
-
 
 #### References<a id="references"></a>
 
