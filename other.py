@@ -63,6 +63,6 @@ def iris_pairplot():
 # Uncomment lines below to test if functions working
 #if __name__ == '__main__': 
     #iris_facetgrid()
-    #iris_violingrid()
+    #iris_violin()
     #iris_pairplot()
         
