@@ -89,14 +89,14 @@ The histograms show that the distributions of sepal width and sepal length are r
 
 The scatterplot for petal size would indicate that the petal length and width of the Iris Setosa is significantly smaller than those of the Iris Versicolor (2nd biggest petals of the three) or the Iris Virginica (largest). The scatterplot for sepal length and width would suggest that the Iris Setosa has the widest and shortest sepals while the Iris Virginica and Versicolor sepal lengths and widths are quite varied.
 
+The Seaborn library (screenshots below) appears to give a more modern feel to the charts/grids in comparison to those of the Matplotlib library. The wider variety of options would mean I would be more likely to use this in a future project rather than Matplotlib.
+
 <img src="assets/img/SeabornFacetGrid.png" alt="Facet Grid from Seaborn library">
 </br>
 <img src="assets/img/SeabornViolin.png" alt="Violin Grids from Seaborn library">
 </br>
 <img src="assets/img/SeabornPairPlot.png" alt="Pair Plot from Seaborn library">
 </br>
-
-The Seaborn library appears to give a more modern feel to the charts/grids in comparison to those of the Matplotlib library. The wider variety of options would mean I would be more likely to use this in a future project rather than Matplotlib.
 
 #### References<a id="references"></a>
 
