@@ -58,3 +58,8 @@ def scatterplot_sepals():
     plt.ylabel('Sepal Width(Cm)')
     plt.legend()
     plt.show()
+
+# Uncomment Below For Testing
+#if __name__ == '__main__':
+    #scatterplot_petals()
+    #scatterplot_sepals()

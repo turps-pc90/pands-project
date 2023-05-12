@@ -85,6 +85,10 @@ For the Iris-virginica species, the sepal length has an average of 6.59cm. and s
 
 The histograms show that the distributions of sepal width and sepal length are relatively similar for all three species, but there are noticeable differences in the distributions of petal width and petal length. For example, the petal width and petal length measurements for Iris Setosa have a narrower range of values and are generally smaller than those for the other two species. Meanwhile, the petal width and petal length measurements for Iris Versicolor and Iris Virginica have similar distributions, but Iris Virginica's measurements tend to be larger than those of Iris Versicolor.
 
+<img src="assets/img/BothScatterplots.png" alt="Scatterplots of petal lengths and widths for the three iris species and also the sepal lengths and widths">
+
+The scatterplot for petal size would indicate that the petal length and width of the Iris Setosa is significantly smaller than those of the Iris Versicolor (2nd biggest petals of the three) or the Iris Virginica (largest). The scatterplot for sepal length and width would suggest that the Iris Setosa has the widest and shortest sepals while the Iris Virginica and Versicolor sepal lengths and widths are quite varied.
+
 #### References<a id="references"></a>
 
 UCI Machine Learning Repository. (n.d.). Iris Data Set. Kaggle. Retrieved April 8, 2023, from https://www.kaggle.com/datasets/uciml/iris?resource=download.

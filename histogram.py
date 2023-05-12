@@ -102,7 +102,7 @@ def plot_virginica():
     plt.show()
 
 # Uncomment Below For Testing
-if __name__ == '__main__':
-    plot_setosa()
-    plot_versicolor()
-    plot_virginica()
+#if __name__ == '__main__':
+    #plot_setosa()
+    #plot_versicolor()
+    #plot_virginica()
